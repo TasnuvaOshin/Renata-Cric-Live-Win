@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminPanel.QuizSection.InstantQuiz.InstantQuiz">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:padding="6dp">
+
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/et_qustion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_embeded"
+            android:layout_margin="10dp"
+            android:background="#eed"
+            android:hint="Enter The Question"
+            android:padding="10dp"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/et_op_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_qustion"
+            android:layout_margin="10dp"
+            android:background="#eed"
+            android:hint="Enter option one"
+            android:padding="10dp"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/et_op_two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_op_one"
+            android:layout_margin="10dp"
+            android:background="#eed"
+            android:hint="Enter option two"
+            android:padding="10dp"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/et_op_two"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="15dp"
+            android:text="Submit" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/on_off"
+        android:visibility="gone"
+        >
+
+
+        <Button
+            android:id="@+id/online"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="10dp"
+            android:text="OnLine?" />
+
+        <Button
+            android:id="@+id/offline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="10dp"
+            android:text="Offline?" />
+
+    </RelativeLayout>
+</RelativeLayout>

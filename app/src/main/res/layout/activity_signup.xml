@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Authentication.SignupActivity">
+
+    <RelativeLayout
+        android:id="@+id/root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="250dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/logo" />
+
+        <ImageView
+            android:id="@+id/are"
+            android:layout_width="250dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/logo"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/areyouin" />
+
+        <RelativeLayout
+            android:id="@+id/registration_on"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/are"
+            android:visibility="visible"
+
+            >
+
+
+            <LinearLayout
+                android:id="@+id/doctor_name_input_section"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iv_login"
+                    android:layout_marginLeft="15dp"
+                    android:text="Name "
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/et_reg_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iv_login"
+                    android:layout_alignTop="@+id/tv_mobile_no"
+                    android:layout_alignBottom="@+id/tv_mobile_no"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_toRightOf="@+id/tv_mobile_no"
+                    android:background="#DADADADA"
+                    android:gravity="start"
+                    android:inputType="text"
+                    android:maxLength="14"
+                    android:padding="6dp"
+
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/doctor_email_input_section"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/doctor_name_input_section"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:visibility="gone"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_email_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iv_login"
+                    android:layout_marginLeft="15dp"
+                    android:text="E-mail "
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/et_reg_email_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iv_login"
+                    android:layout_alignTop="@+id/tv_mobile_no"
+                    android:layout_alignBottom="@+id/tv_mobile_no"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_toRightOf="@+id/tv_mobile_no"
+                    android:background="#DADADADA"
+                    android:gravity="start"
+                    android:inputType="textEmailAddress"
+                    android:maxLength="34"
+                    android:padding="6dp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/doctor_mobile_no_input_section"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/doctor_email_input_section"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_mobile_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iv_login"
+                    android:layout_marginLeft="15dp"
+                    android:text="Mobile No "
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+
+                    />
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/et_reg_mobile_no"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/iv_login"
+                        android:layout_alignTop="@+id/tv_mobile_no"
+                        android:layout_alignBottom="@+id/tv_mobile_no"
+                        android:layout_marginLeft="35dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_toRightOf="@+id/tv_mobile_no"
+                        android:background="#DADADADA"
+                        android:gravity="start"
+                        android:inputType="number"
+                        android:maxLength="14"
+                        android:padding="6dp" />
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/doctor_dsm_input_section"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/doctor_mobile_no_input_section"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_dsm_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iv_login"
+                    android:layout_marginLeft="15dp"
+                    android:text="PSO Code "
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+
+                    />
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/et_reg_dsm_no"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/iv_login"
+                        android:layout_alignTop="@+id/tv_mobile_no"
+                        android:layout_alignBottom="@+id/tv_mobile_no"
+                        android:layout_marginLeft="36dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_toRightOf="@+id/tv_mobile_no"
+                        android:background="#DADADADA"
+                        android:gravity="start"
+                        android:maxLength="14"
+                        android:padding="6dp" />
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/doctor_dsm_input_section"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginRight="25dp"
+                android:background="#DADADADA"
+                android:padding="3dp">
+
+                <TextView
+                    android:id="@+id/profile_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginLeft="6dp"
+                    android:fontFamily="sans-serif"
+                    android:padding="3dp"
+                    android:text="Profile"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@color/textColor"
+                    android:padding="3dp">
+
+                    <Spinner
+                        android:id="@+id/profile_spinner"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#FFFFFF" />
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+
+            <Button
+                android:id="@+id/btn_signin"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/profile"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="6dp"
+                android:onClick="SignUpProcess"
+                android:padding="6dp"
+                android:paddingStart="25dp"
+                android:paddingEnd="25dp"
+                android:shadowColor="@color/colorPrimary"
+                android:text="Sign Up"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:backgroundTint="#666577" />
+
+            <ImageView
+
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@id/btn_signin"
+                android:padding="12dp"
+                android:src="@drawable/renata" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/password_section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/are"
+            android:visibility="gone"
+
+            >
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="15dp"
+                android:background="#DADADADA"
+                android:hint="Enter  Password"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+
+
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/password"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:background="@color/colorPrimaryDark"
+                android:onClick="PasswordSubmit"
+                android:text="Submit"
+                android:textColor="@color/whiteColor"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</ScrollView>

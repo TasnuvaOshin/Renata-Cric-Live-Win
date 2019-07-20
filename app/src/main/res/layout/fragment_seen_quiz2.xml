@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminPanel.QuizSection.SeenQuiz.SeenQuiz">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:padding="6dp"
+        >
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Video Embeded Code"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:background="#eed"
+            android:id="@+id/et_embeded"
+            android:textColor="@color/colorPrimaryDark"
+            />
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter The Question"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:background="#eed"
+          android:layout_below="@+id/et_embeded"
+            android:id="@+id/et_qustion"
+            android:textColor="@color/colorPrimaryDark"
+            />
+        <android.support.design.widget.TextInputEditText
+           android:layout_below="@+id/et_qustion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter option one"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:background="#eed"
+            android:id="@+id/et_op_one"
+            android:textColor="@color/colorPrimaryDark"
+            />
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter option two"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:background="#eed"
+            android:layout_below="@+id/et_op_one"
+            android:id="@+id/et_op_two"
+            android:textColor="@color/colorPrimaryDark"
+            />
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Question Answer"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:background="#eed"
+            android:layout_below="@id/et_op_two"
+            android:id="@+id/et_answer"
+            android:textColor="@color/colorPrimaryDark"
+
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/et_answer"
+            android:layout_margin="15dp"
+            android:layout_centerHorizontal="true"
+            android:text="Submit"
+            android:id="@+id/submit"
+            />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

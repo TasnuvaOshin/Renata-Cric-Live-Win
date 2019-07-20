@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/group_one"
+        android:checkableBehavior="single"
+        
+        >
+
+
+        <item
+            android:title="Home"
+            android:id="@+id/menu_home"
+            android:icon="@drawable/home_icon"
+            />
+        <item
+            android:title="Live"
+            android:id="@+id/menu_latest"
+            android:icon="@drawable/latest_icon"
+            />
+        <item
+            android:title="Matches"
+            android:id="@+id/menu_match"
+            android:icon="@drawable/match_icon"
+            />
+        <item
+            android:title="Highlights"
+            android:id="@+id/menu_video"
+            android:icon="@drawable/video_icon"
+            />
+        <item
+            android:title="More"
+            android:id="@+id/menu_more"
+            android:icon="@drawable/more_icon"
+            />
+
+
+    </group>
+
+
+
+</menu>

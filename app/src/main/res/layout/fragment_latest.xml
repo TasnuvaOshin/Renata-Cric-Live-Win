@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".UserEnd.Latest.LatestFragment">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/banner_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        app:cardCornerRadius="6dp"
+        app:cardElevation="6dp"
+
+        >
+
+        <ImageView
+            android:id="@+id/iv_banner_ads"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/btn_scorecard"
+            android:visibility="visible" />
+    </android.support.v7.widget.CardView>
+
+
+    <LinearLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/banner_section"
+        android:orientation="vertical"
+        android:padding="6dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Live"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="22sp"
+            android:textStyle="bold"
+
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:padding="6dp"
+            android:text="Live ICC Cricket World Cup Match will Telecast"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:id="@+id/home_banner"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/colorPrimary"
+                android:elevation="6dp"
+                android:padding="2dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/header_banner"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@id/home_banner">
+
+                <TextView
+                    android:id="@+id/home_next_match"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="6dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="Next Match"
+                    android:textAlignment="center"
+                    android:textColor="@color/textColor"
+                    android:textSize="26sp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:id="@+id/flag_section"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/home_next_match"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginEnd="35dp">
+
+                    <ImageView
+                        android:id="@+id/iv_flagone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                      />
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/vs" />
+
+                    <ImageView
+                        android:id="@+id/iv_flagtwo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/flag_section"
+                    android:id="@+id/teams"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:textSize="18sp"
+                        android:textColor="@android:color/holo_red_dark"
+                        android:textAlignment="center"
+                        android:textStyle="bold"
+                        android:layout_marginStart="30dp"
+                        android:layout_alignParentStart="true"
+                        android:padding="8dp"
+                        android:id="@+id/teamonename"
+                        />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:textSize="18sp"
+                        android:textColor="@android:color/holo_red_dark"
+                        android:textAlignment="center"
+                        android:textStyle="bold"
+                        android:layout_marginEnd="30dp"
+                        android:layout_alignParentEnd="true"
+                        android:padding="8dp"
+                        android:id="@+id/teamtwoname"
+                        />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_venue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/teams"
+                    android:layout_marginTop="12dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:padding="6dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/textColor"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+                <android.support.v7.widget.CardView
+                    android:layout_below="@id/tv_venue"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:orientation="vertical"
+                    tools:context=".RetrofitTest"
+                    app:cardElevation="10dp"
+                    app:cardCornerRadius="6dp"
+                    android:layout_margin="3dp"
+                    android:id="@+id/tv_live_score"
+                    >
+                    <LinearLayout
+                        android:id="@+id/No_live"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#000273"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="No Live Match Available!"
+                            android:textColor="@android:color/white"
+                            android:textStyle="bold"
+                            android:textSize="20dp"
+                            />
+
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:id="@+id/show_live"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:background="#000273"
+
+                        >
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:textStyle="bold"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/white"
+                            android:textSize="18sp"
+                            android:id="@+id/live_target"
+                            />
+
+                        <LinearLayout
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_margin="6dp"
+
+                            >
+                            <TextView
+                                android:textSize="16sp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:id="@+id/live_inning_teamone"
+                                android:textStyle="bold"
+                                android:layout_marginEnd="6dp"
+                                android:textColor="@android:color/white"
+                                android:layout_marginRight="6dp" />
+                            <TextView
+                                android:id="@+id/live_team_one_name"
+                                android:textSize="18sp"
+                                android:layout_marginStart="6dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:textAllCaps="true"
+                                android:textStyle="bold"
+                                android:textColor="@android:color/white"
+                                android:layout_marginLeft="6dp" />
+                            <TextView
+                                android:id="@+id/live_team_one_run"
+                                android:textSize="16sp"
+                                android:layout_marginStart="10dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:textStyle="bold"
+                                android:textColor="@android:color/white"
+                                android:layout_marginLeft="10dp" />
+                            <TextView
+                                android:textSize="16sp"
+                                android:layout_marginStart="6dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="/"
+                                android:textStyle="bold"
+                                android:textColor="@android:color/white"
+                                android:layout_marginLeft="6dp" />
+                            <TextView
+                                android:id="@+id/live_team_one_wicket"
+                                android:textSize="16sp"
+                                android:layout_marginStart="6dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:textStyle="bold"
+                                android:textColor="@android:color/white"
+                                android:layout_marginLeft="6dp" />
+                            <TextView
+                                android:id="@+id/live_team_one_over"
+                                android:textSize="16sp"
+                                android:layout_marginStart="10dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:textStyle="bold"
+                                android:textColor="@android:color/white"
+                                android:layout_marginLeft="10dp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_margin="6dp"
+                            android:gravity="center"
+                            >
+                            <TextView
+                                android:id="@+id/live_inning_teamtwo"
+                                android:textSize="16sp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:textStyle="bold"
+                                android:layout_marginEnd="6dp"
+                                android:textColor="@android:color/white"
+                                android:layout_marginRight="6dp" />
+                            <TextView
+                                android:id="@+id/live_team_two_name"
+                                android:textSize="18sp"
+                                android:layout_marginStart="6dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:textAllCaps="true"
+                                android:textStyle="bold"
+                                android:textColor="@android:color/white"
+                                android:layout_marginLeft="6dp" />
+                            <TextView
+                                android:id="@+id/live_team_two_run"
+                                android:textSize="16sp"
+                                android:layout_marginStart="10dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:textStyle="bold"
+                                android:textColor="@android:color/white"
+                                android:layout_marginLeft="10dp" />
+                            <TextView
+                                android:textSize="16sp"
+                                android:layout_marginStart="6dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="/"
+                                android:textStyle="bold"
+                                android:textColor="@android:color/white"
+                                android:layout_marginLeft="6dp" />
+                            <TextView
+                                android:id="@+id/live_team_two_wicket"
+                                android:textSize="16sp"
+                                android:layout_marginStart="6dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:textStyle="bold"
+                                android:textColor="@android:color/white"
+                                android:layout_marginLeft="6dp" />
+                            <TextView
+                                android:id="@+id/live_team_two_over"
+                                android:textSize="16sp"
+                                android:layout_marginStart="10dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:textStyle="bold"
+                                android:textColor="@android:color/white"
+                                android:layout_marginLeft="10dp" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+
+                <RelativeLayout
+                    android:id="@+id/bb"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/tv_live_score"
+                    android:orientation="vertical">
+
+
+
+                    <WebView
+                        android:id="@+id/wv_broadcast"
+                        android:layout_width="fill_parent"
+                        android:layout_height="200dp" />
+                </RelativeLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/bb"
+                    android:layout_marginBottom="8dp"
+                    >
+
+                <Button
+                    android:layout_marginStart="25dp"
+                    android:id="@+id/btn_scorecard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/bb"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="6dp"
+                    android:padding="12dp"
+                    android:text="Scorecard"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                   android:background="@color/colorPrimaryDark"
+
+                    />
+
+                    <Button
+                        android:textAllCaps="false"
+                        android:id="@+id/fullScreen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginStart="15dp"
+                        android:text="Watch Full Screen"
+                        android:textColor="@android:color/white"
+                        android:background="@color/colorPrimaryDark"
+                        android:padding="12dp"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+
+                        />
+
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_background"
+    tools:context=".UserEnd.HighLights.HighLightFragment">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/banner_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        app:cardCornerRadius="6dp"
+        app:cardElevation="6dp">
+
+        <ImageView
+            android:id="@+id/iv_banner_ads"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/ib_quiz"
+
+
+            />
+    </android.support.v7.widget.CardView>
+
+
+    <LinearLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/banner_section"
+        android:orientation="vertical"
+        android:padding="6dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Highlight"
+            android:textAlignment="center"
+            android:textColor="@color/whiteColor"
+            android:textSize="22sp"
+            android:textStyle="bold"
+
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:padding="6dp"
+            android:text="You will get brief highlights of last day match"
+            android:textAlignment="center"
+            android:textColor="@color/whiteColor"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="15dp"
+            android:background="@drawable/aa_bc"
+
+            >
+
+            <Button
+                android:text="FullScreen"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:background="@color/colorPrimaryDark"
+                android:id="@+id/fullScreen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+               />
+
+
+            <WebView
+                android:id="@+id/wv_v1"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:fitsSystemWindows="true"
+                android:layout_marginBottom="6dp"
+                />
+
+
+
+
+                        <Button
+                            android:text="FullScreen"
+                            android:textAllCaps="false"
+                            android:textColor="@android:color/white"
+                            android:textStyle="bold"
+                            android:padding="10dp"
+                            android:background="@color/colorPrimaryDark"
+                            android:id="@+id/fullScreen2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                           />
+
+
+                        <WebView
+                            android:id="@+id/wv_v2"
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            android:layout_marginBottom="6dp"
+                            />
+
+
+
+
+
+
+
+
+
+                        <Button
+                            android:text="FullScreen"
+                            android:textAllCaps="false"
+                            android:textColor="@android:color/white"
+                            android:textStyle="bold"
+                            android:padding="10dp"
+                            android:background="@color/colorPrimaryDark"
+                            android:id="@+id/fullScreen3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                           />
+
+                        <WebView
+
+                            android:id="@+id/wv_v3"
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                                android:layout_marginBottom="6dp"
+
+                            >
+
+                        </WebView>
+
+
+
+            <Button
+                android:text="FullScreen"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:background="@color/colorPrimaryDark"
+                android:id="@+id/fullScreen4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                />
+
+            <WebView
+                    android:id="@+id/wv_v4"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:padding="6dp">
+
+                </WebView>
+
+
+            <Button
+                android:text="FullScreen"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:background="@color/colorPrimaryDark"
+                android:id="@+id/fullScreen5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/wv_v4"
+
+                />
+                <WebView
+                    android:layout_below="@id/wv_v4"
+                    android:id="@+id/wv_v5"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:padding="6dp"
+                    android:layout_marginBottom="12dp"
+                    >
+
+                </WebView>
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

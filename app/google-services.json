@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "78315594064",
+    "firebase_url": "https://renata-6df10.firebaseio.com",
+    "project_id": "renata-6df10",
+    "storage_bucket": "renata-6df10.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:78315594064:android:6c19037e36c92744",
+        "android_client_info": {
+          "package_name": "cricketworldcup.icccricketworldcup"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "78315594064-u0innmq0c03tqhbvcghk0mcmu8rjkhiq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "cricketworldcup.icccricketworldcup",
+            "certificate_hash": "c5006ace9834d3009450caf340f1f59173096fbd"
+          }
+        },
+        {
+          "client_id": "78315594064-12deltuj5fmq6rgoorf3cmp2c8qnqd77.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJZTDAjkQUh0PLSGvIyAXurEPXbOmjcTg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "78315594064-12deltuj5fmq6rgoorf3cmp2c8qnqd77.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Cric Live Win</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="profile">
+        <item>Profile</item>
+        <item>Doctor</item>
+        <item>Chemist</item>
+        <item>Others</item>
+    </string-array>
+
+    <string name="guideline">
+
+<b><h2> Instant Quiz</h2> </b> \n
+You will get Instant Quiz after staring of ICC Cricket World Cup 2019 and this quiz will be from highlight of previous day match
+
+<b>Quiz Guideline</b>
+	There will be a total of at least 80 Quizzes of 3 different types as Seen Quiz, Match Prediction Quiz and Instant Quiz
+	To be eligible for winner, one has to participate at least 60% of total quizzes
+	Listed 1st gifts will be acquired for highest quiz scorer and rest gifts will be distributed according to quiz score
+	In case of same quiz score, winner will be selected by using Automatic Algorithm Methodology
+	Premium Gifts are applicable only for doctors
+
+<b>Live</b>
+Live ICC Cricket World Cup Match will telecast
+
+<b>Highlight</b>
+You will get brief highlights of last day match
+
+
+
+
+
+    </string>
+
+</resources>

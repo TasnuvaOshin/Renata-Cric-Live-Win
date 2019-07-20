@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserEnd.More.Standings.StandingsFragment">
+
+    <TabHost
+        android:id="@+id/tabHost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:theme="@style/TabWidgetTheme">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#2E3387"
+                android:elevation="15dp"
+
+                />
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/tab1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/img"
+                        />
+
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/tab2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/colorPrimaryDark">
+
+                            <android.support.v7.widget.CardView
+                                android:id="@+id/cardone"
+                                android:layout_width="match_parent"
+                                android:layout_height="200dp"
+                                android:layout_margin="12dp"
+                                app:cardBackgroundColor="#181A55"
+                                app:cardCornerRadius="8dp"
+                                app:cardElevation="10dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="sans-serif-condensed"
+                                        android:padding="6dp"
+                                        android:text="ICC World Cup Semi Final 1"
+                                        android:textColor="@color/whiteColor"
+                                        android:textSize="16sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="sans-serif-condensed"
+                                        android:padding="6dp"
+                                        android:text="Jul 09 Tuesday,Old Trafford, Manchester,3:30PM"
+                                        android:textColor="#aea9a9"
+                                        android:textSize="12sp"
+                                        android:textStyle="bold" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal">
+
+                                        <ImageButton
+                                            android:layout_width="60dp"
+                                            android:layout_height="40dp"
+                                            android:layout_margin="10dp"
+                                            android:background="@color/whiteColor"
+                                            android:src="@drawable/ic_bookmark_black_24dp" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_margin="10dp"
+                                            android:text="1st"
+                                            android:textColor="@color/whiteColor"
+                                            android:textSize="26sp"
+                                            android:textStyle="bold"
+
+                                            />
+
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal">
+
+                                        <ImageButton
+                                            android:layout_width="60dp"
+                                            android:layout_height="40dp"
+                                            android:layout_margin="10dp"
+                                            android:background="@color/whiteColor"
+                                            android:src="@drawable/ic_bookmark_black_24dp" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_margin="10dp"
+                                            android:text="4th"
+                                            android:textColor="@color/whiteColor"
+                                            android:textSize="26sp"
+                                            android:textStyle="bold"
+
+                                            />
+
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+                            </android.support.v7.widget.CardView>
+
+
+                            <android.support.v7.widget.CardView
+                                android:id="@+id/cardtwo"
+                                android:layout_width="match_parent"
+                                android:layout_height="200dp"
+                                android:layout_below="@id/cardone"
+                                android:layout_margin="12dp"
+                                app:cardBackgroundColor="#181A55"
+                                app:cardCornerRadius="8dp"
+                                app:cardElevation="10dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="sans-serif-condensed"
+                                        android:padding="6dp"
+                                        android:text="ICC World Cup Semi Final 2"
+                                        android:textColor="@color/whiteColor"
+                                        android:textSize="16sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="sans-serif-condensed"
+                                        android:padding="6dp"
+                                        android:text="Jul 11 Thursday,Edgbaston,Birmingham England,3:30PM"
+                                        android:textColor="#aea9a9"
+                                        android:textSize="12sp"
+                                        android:textStyle="bold" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal">
+
+                                        <ImageButton
+                                            android:layout_width="60dp"
+                                            android:layout_height="40dp"
+                                            android:layout_margin="10dp"
+                                            android:background="@color/whiteColor"
+                                            android:src="@drawable/ic_bookmark_black_24dp" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_margin="10dp"
+                                            android:text="2nd"
+                                            android:textColor="@color/whiteColor"
+                                            android:textSize="26sp"
+                                            android:textStyle="bold"
+
+                                            />
+
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal">
+
+                                        <ImageButton
+                                            android:layout_width="60dp"
+                                            android:layout_height="40dp"
+                                            android:layout_margin="10dp"
+                                            android:background="@color/whiteColor"
+                                            android:src="@drawable/ic_bookmark_black_24dp" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_margin="10dp"
+                                            android:text="3rd"
+                                            android:textColor="@color/whiteColor"
+                                            android:textSize="26sp"
+                                            android:textStyle="bold"
+
+                                            />
+
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+                            </android.support.v7.widget.CardView>
+
+                            <android.support.v7.widget.CardView
+                                android:id="@+id/cardthree"
+                                android:layout_width="match_parent"
+                                android:layout_height="200dp"
+                                android:layout_below="@id/cardtwo"
+                                android:layout_margin="12dp"
+                                app:cardBackgroundColor="#181A55"
+                                app:cardCornerRadius="8dp"
+                                app:cardElevation="10dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="sans-serif-condensed"
+                                        android:padding="6dp"
+                                        android:text="ICC World Cup Final "
+                                        android:textColor="@color/whiteColor"
+                                        android:textSize="16sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="sans-serif-condensed"
+                                        android:padding="6dp"
+                                        android:text="Jul 14 Sunday,Lord's London,England,3:30PM"
+                                        android:textColor="#aea9a9"
+                                        android:textSize="12sp"
+                                        android:textStyle="bold" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal">
+
+                                        <ImageButton
+                                            android:layout_width="60dp"
+                                            android:layout_height="40dp"
+                                            android:layout_margin="10dp"
+                                            android:background="@color/whiteColor"
+                                            android:src="@drawable/ic_bookmark_black_24dp" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_margin="10dp"
+                                            android:text="TBC"
+                                            android:textColor="@color/whiteColor"
+                                            android:textSize="26sp"
+                                            android:textStyle="bold"
+
+                                            />
+
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal">
+
+                                        <ImageButton
+                                            android:layout_width="60dp"
+                                            android:layout_height="40dp"
+                                            android:layout_margin="10dp"
+                                            android:background="@color/whiteColor"
+                                            android:src="@drawable/ic_bookmark_black_24dp" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_margin="10dp"
+                                            android:text="TBC"
+                                            android:textColor="@color/whiteColor"
+                                            android:textSize="26sp"
+                                            android:textStyle="bold"
+
+                                            />
+
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+                            </android.support.v7.widget.CardView>
+                        </RelativeLayout>
+
+                    </ScrollView>
+
+
+                </RelativeLayout>
+
+
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+</RelativeLayout>

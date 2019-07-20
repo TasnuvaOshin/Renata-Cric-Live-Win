@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="cricketworldcup.icccricketworldcup">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo"
+        android:usesCleartextTraffic="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity
+            android:name=".Main2Activity"
+            android:fitsSystemWindows="true"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".AdminPanel.MarksDistrubution.SetScore" />
+        <activity
+            android:name=".Starter.StartActivity"
+            android:hardwareAccelerated="true" />
+        <activity
+            android:name=".Authentication.SignupActivity"
+            android:fitsSystemWindows="true"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".Authentication.LoginActivity"
+            android:fitsSystemWindows="true"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".AdminPanel.AdminHomeActivity" />
+        <activity
+            android:name=".UserEnd.Latest.FullScreen.BroadCast"
+            android:screenOrientation="landscape" />
+        <activity android:name=".Starter.SplashScreenActivity" />
+        <activity android:name=".UserEnd.HomeActivity" />
+        <activity android:name=".AdminPanel.MarksDistrubution.ScoreActivity" />
+        <activity android:name=".AdminPanel.MarksDistrubution.CountTopScorer"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".AdminPanel.QuizSection.QuizHomeFragment">
+
+   <Button
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="Seen Quiz"
+       android:id="@+id/q1"
+       android:padding="6dp"
+       android:layout_margin="10dp"
+       android:background="#818181"
+       android:textColor="@color/whiteColor"
+       android:textStyle="bold"
+       android:layout_centerHorizontal="true"
+
+       />
+    <Button
+        android:layout_below="@id/q1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Instant Quiz"
+        android:id="@+id/q2"
+        android:padding="6dp"
+        android:layout_margin="10dp"
+        android:background="#818181"
+        android:textColor="@color/whiteColor"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        />
+    <Button
+        android:layout_below="@id/q2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Match Prediction"
+        android:id="@+id/q3"
+        android:padding="6dp"
+        android:layout_margin="10dp"
+        android:background="#818181"
+        android:textColor="@color/whiteColor"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        />
+
+</RelativeLayout>
